@@ -1,0 +1,7 @@
+id,name,email,phone,address,created_at,updated_at
+1,Tanmay,hhh@gmail.com,555555565656,,2026-09-08 13:50:14,2026-09-08 13:50:14
+2,Aarav Sharma,aarav.sharma@example.com,+91 98765 43210,"Connaught Place, New Delhi",2026-09-08 14:34:08,2026-09-08 14:34:08
+3,Priya Patel,priya.patel@example.com,+91 98123 45678,"Bandra West, Mumbai",2026-09-08 14:34:08,2026-09-08 14:34:08
+4,Rohan Gupta,rohan.gupta@example.com,+91 99887 76655,"Indiranagar, Bengaluru",2026-09-08 14:34:08,2026-09-08 14:34:08
+5,Ananya Verma,ananya.verma@example.com,+91 91234 56789,"Park Street, Kolkata",2026-09-08 14:34:08,2026-09-08 14:34:08
+6,Vikram Singh,vikram.singh@example.com,+91 97654 32109,"Civil Lines, Jaipur",2026-09-08 14:34:08,2026-09-08 14:34:08

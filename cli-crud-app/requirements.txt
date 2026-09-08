@@ -1,0 +1,7 @@
+# No external dependencies required.
+# This project uses only Python's standard library:
+#   - sqlite3   (persistence)
+#   - dataclasses, re, datetime, contextlib, pathlib (core logic)
+#   - unittest  (testing)
+#
+# Requires Python 3.8+
