@@ -118,7 +118,7 @@ class ContactManagerCLI:
         print(f"  {Color.CYAN}9.{Color.RESET} Populate sample demo contacts")
         print(f"  {Color.CYAN}10.{Color.RESET} View database statistics & summary")
         print(f"  {Color.RED}11.{Color.RESET} Clear all contacts (Reset)")
-        print(f"  {Color.MAGENTA}12.{Color.RESET} Launch NanoBanana Web GUI (Browser)")
+        print(f"  {Color.MAGENTA}12.{Color.RESET} Launch NexusContact Web GUI (Browser)")
         print(f"  {Color.DIM}0.{Color.RESET} Exit")
         print(f"{Color.BOLD}--------------------------------------------------------{Color.RESET}")
 
@@ -361,7 +361,7 @@ class ContactManagerCLI:
             print(f"\n{info('Reset aborted. Your data was not touched.')}\n")
 
     def launch_gui(self):
-        print(f"\n{info('Opening NanoBanana Web GUI at http://localhost:5000 in your browser...')}")
+        print(f"\n{info('Opening NexusContact Web GUI at http://localhost:5000 in your browser...')}")
         import subprocess
         import webbrowser
         try:

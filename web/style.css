@@ -1,28 +1,28 @@
 /* ==========================================================================
-   NanoBanana Contact OS — Modern Glassmorphism & Cybernetic Styling
+   NexusContact OS — Modern Glassmorphism & Cybernetic Styling
    ========================================================================== */
 
 :root {
-  --bg-dark: #090c10;
-  --bg-surface: rgba(18, 22, 31, 0.75);
-  --bg-surface-hover: rgba(26, 32, 45, 0.85);
-  --bg-card: rgba(21, 26, 38, 0.65);
-  --bg-modal: #11151f;
+  --bg-dark: #07090e;
+  --bg-surface: rgba(15, 20, 30, 0.75);
+  --bg-surface-hover: rgba(22, 29, 44, 0.85);
+  --bg-card: rgba(18, 23, 35, 0.65);
+  --bg-modal: #0d111a;
 
-  --accent-gold: #ffd214;
-  --accent-gold-glow: rgba(255, 210, 20, 0.35);
-  --accent-cyan: #00e5ff;
-  --accent-cyan-glow: rgba(0, 229, 255, 0.3);
+  --accent-gold: #00e5ff;
+  --accent-gold-glow: rgba(0, 229, 255, 0.35);
+  --accent-cyan: #8b5cf6;
+  --accent-cyan-glow: rgba(139, 92, 246, 0.3);
   --accent-red: #ff4757;
-  --accent-green: #2ed573;
+  --accent-green: #10b981;
 
   --text-main: #f0f3f8;
   --text-muted: #8b949e;
   --text-dim: #545d68;
 
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(255, 210, 20, 0.3);
-  --border-cyan: rgba(0, 229, 255, 0.3);
+  --border-gold: rgba(0, 229, 255, 0.3);
+  --border-cyan: rgba(139, 92, 246, 0.3);
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -248,13 +248,13 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #ffd214 0%, #f59e0b 100%);
-  color: #0d0f12;
-  box-shadow: 0 4px 15px var(--accent-gold-glow);
+  background: linear-gradient(135deg, #00e5ff 0%, #6366f1 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.35);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 210, 20, 0.55);
+  box-shadow: 0 6px 20px rgba(0, 229, 255, 0.55);
 }
 
 .btn-secondary {

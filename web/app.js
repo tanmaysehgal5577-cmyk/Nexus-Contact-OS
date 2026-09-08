@@ -1,5 +1,5 @@
 /**
- * NanoBanana Contact OS — Client-Side Logic
+ * NexusContact OS — Client-Side Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
       currentContacts = data.contacts || [];
       renderContacts();
     } catch (err) {
-      showToast('Failed to connect to NanoBanana API', 'error');
+      showToast('Failed to connect to NexusContact API', 'error');
     } finally {
       showSpinner(false);
     }

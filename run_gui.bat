@@ -1,5 +1,5 @@
 @echo off
-title NanoBanana Contact OS - Web GUI
-echo Starting NanoBanana Contact GUI App...
+title NexusContact OS - Web GUI
+echo Starting NexusContact GUI App...
 python web_app.py
 pause

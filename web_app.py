@@ -3,7 +3,7 @@
 web_app.py
 Lightweight, zero-dependency Web Application & REST API for Contact Manager.
 Uses Python's standard library (http.server + sqlite3) to provide a rich graphical
-interface with NanoBanana styling.
+interface with NexusContact OS styling.
 
 Usage:
     python web_app.py [--port 5000] [--no-browser]
@@ -44,7 +44,7 @@ WEB_DIR = BASE_DIR / "web"
 DEFAULT_PORT = 5000
 
 
-class NanoBananaAPIHandler(SimpleHTTPRequestHandler):
+class NexusContactAPIHandler(SimpleHTTPRequestHandler):
     """Handles both static web assets and RESTful API endpoints."""
 
     def __init__(self, *args, **kwargs):
@@ -248,11 +248,11 @@ class NanoBananaAPIHandler(SimpleHTTPRequestHandler):
 
 def run_server(port: int = DEFAULT_PORT, auto_open: bool = True):
     server_address = ("", port)
-    httpd = ThreadingHTTPServer(server_address, NanoBananaAPIHandler)
+    httpd = ThreadingHTTPServer(server_address, NexusContactAPIHandler)
     url = f"http://localhost:{port}"
 
     print(f"\n+======================================================================+")
-    print(f"|            NANOBANANA CONTACT MANAGER - GUI WEB APPLICATION          |")
+    print(f"|            NEXUSCONTACT - SMART CONTACT OS GUI WEB APP               |")
     print(f"+======================================================================+")
     print(f"  Server running at: \033[96m\033[1m{url}\033[0m")
     print(f"  Press \033[93mCtrl + C\033[0m in this terminal to stop the server.\n")
@@ -266,7 +266,7 @@ def run_server(port: int = DEFAULT_PORT, auto_open: bool = True):
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
-        print("\nStopping NanoBanana Web Server... Goodbye!")
+        print("\nStopping NexusContact Web Server... Goodbye!")
         httpd.server_close()
 
 
