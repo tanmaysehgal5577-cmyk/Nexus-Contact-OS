@@ -253,7 +253,7 @@ class NexusContactAPIHandler(SimpleHTTPRequestHandler):
 
 
 def run_server(port: int = DEFAULT_PORT, auto_open: bool = True):
-    server_address = ("", port)
+    server_address = ("0.0.0.0", port)
     httpd = ThreadingHTTPServer(server_address, NexusContactAPIHandler)
     url = f"http://localhost:{port}"
 
@@ -277,7 +277,8 @@ def run_server(port: int = DEFAULT_PORT, auto_open: bool = True):
 
 
 if __name__ == "__main__":
-    port = DEFAULT_PORT
+    # Render sets PORT env variable; fallback to DEFAULT_PORT for local dev
+    port = int(os.environ.get("PORT", DEFAULT_PORT))
     if len(sys.argv) > 1 and sys.argv[1].isdigit():
         port = int(sys.argv[1])
     auto_open = "--no-browser" not in sys.argv
